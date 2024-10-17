@@ -1,7 +1,7 @@
 {
   "name": "prj",
   "version": "0.0.0",
-  "main": "main.js",
+  "main": "server/dist/main.js",
   "scripts": {
     "build": "npm-run-all build:install build:client build:server",
     "build:install": "npm-run-all build:install:client build:install:server",
