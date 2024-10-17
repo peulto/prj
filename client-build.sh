@@ -5,6 +5,6 @@ npm run build
 
 cd ..
 
-cp -r client/dist server/client
+cp -r client/dist server/dist/client
 
-echo "Success move from client/dist to server/client"
+echo "Success move from client/dist to server/dist/client"
