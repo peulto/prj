@@ -5,8 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node .",
-    "build": "npm run build:client",
-    "build:client": "cd client && npm run dev"
+    "build": "tsc"
   },
   "author": "",
   "license": "MIT",
