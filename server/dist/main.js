@@ -6,7 +6,7 @@ const path_1 = require("path");
 const app = (0, express_1.default)();
 const port = 3001;
 app.use(express_1.default.json());
-const clientPath = (0, path_1.join)(__dirname, "./client/dist");
+const clientPath = (0, path_1.join)(__dirname, "../client/dist");
 app.use(express_1.default.static(clientPath));
 app.get('/api/hello', (req, res) => {
     res.json({ 'hello': 'world!' });

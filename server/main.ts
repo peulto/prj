@@ -6,7 +6,7 @@ const port = 3001;
 
 app.use(express.json());
 
-const clientPath = join(__dirname, "./client/dist");
+const clientPath = join(__dirname, "../client/dist");
 app.use(express.static(clientPath));
 
 app.get('/api/hello', (req, res) => {
