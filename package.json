@@ -2,9 +2,12 @@
   "name": "prj",
   "version": "0.0.0",
   "scripts": {
-    "build": "",
+    "build": "npm-run-all build:client build:server",
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all2": "6.2.3"
+  }
 }
