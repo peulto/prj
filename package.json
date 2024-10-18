@@ -7,7 +7,7 @@
     "build:install": "npm-run-all build:install:client build:install:server",
     "build:install:client": "cd client && npm install",
     "build:install:server": "cd server && npm install",
-    "build:client": "bash client-build.sh",
+    "build:client": "bash scripts/client-build.sh",
     "build:server": "cd server && npm run build"
   },
   "license": "MIT",
