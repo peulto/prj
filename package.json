@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm-run-all build:install build:server build:client",
+    "build": "npm-run-all build:install build:server build:client && bash scripts/finish-build.sh",
     "build:install": "npm-run-all build:install:client build:install:server",
     "build:install:client": "cd client && npm install",
     "build:install:server": "cd server && npm install",
