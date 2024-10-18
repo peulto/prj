@@ -1,5 +1,6 @@
 import express from "express";
 import {join, resolve} from "path";
+import Socket from "./service/socket";
 
 const app = express();
 const port = 3001;
@@ -17,8 +18,10 @@ app.get('*', (req, res) => {
   res.sendFile(resolve(clientPath, 'index.html'));
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Server listening is http://localhost:${port}`);
 });
+
+new Socket(server);
 
 module.exports = app;

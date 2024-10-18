@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const path_1 = require("path");
+const socket_1 = __importDefault(require("./service/socket"));
 const app = (0, express_1.default)();
 const port = 3001;
 app.use(express_1.default.json());
@@ -16,7 +17,8 @@ app.get('/api/hello', (req, res) => {
 app.get('*', (req, res) => {
     res.sendFile((0, path_1.resolve)(clientPath, 'index.html'));
 });
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(`Server listening is http://localhost:${port}`);
 });
+new socket_1.default(server);
 module.exports = app;

@@ -12,6 +12,10 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/ws": "^8.5.12",
     "npm-run-all2": "6.2.3"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
   }
 }
