@@ -3,14 +3,10 @@
     "target": "ESNext",
     "module": "commonJS",
     "outDir": "dist",
-    "sourceMap": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "sourceMap": false,
     "strict": true,
-    "importHelpers": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "lib": [
       "ESNext",
       "ESNext.AsyncIterable"
